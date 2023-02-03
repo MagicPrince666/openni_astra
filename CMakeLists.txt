@@ -146,6 +146,9 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so.4.2 DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so.4.2.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
+			#libpng12
+			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libpng12.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
+			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libpng12.so.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			#D2C
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/d2c/lib/x64/libd2c.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			#libuvc

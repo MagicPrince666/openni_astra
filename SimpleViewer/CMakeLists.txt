@@ -98,7 +98,7 @@ add_executable(${TARGET} ${SRC})
 if(CMAKE_SYSTEM_NAME MATCHES "Windows")
 	target_link_libraries(${TARGET} Uvc-Swapper OpenNI2 opencv_world430 d2c)
 elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
-	target_link_libraries(${TARGET} Uvc-Swapper OpenNI2 opencv_core opencv_highgui opencv_imgcodecs opencv_imgproc d2c)
+	target_link_libraries(${TARGET} Uvc-Swapper OpenNI2 opencv_core opencv_highgui opencv_imgcodecs opencv_imgproc png12 d2c)
 else()
 	
 endif()
