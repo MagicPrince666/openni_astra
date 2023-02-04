@@ -29,9 +29,9 @@ MESSAGE(STATUS "add_subdirectory 1")
 	add_subdirectory(InfraredOniFileReader)
 	add_subdirectory(InfraredOniFileRecorder)
 	add_subdirectory(GeneratePointCloud)
-	#add_subdirectory(MultiDepthViewer)
-	#add_subdirectory(SimpleViewer)
-	#add_subdirectory(ExtendedAPI)
+	add_subdirectory(MultiDepthViewer)
+	add_subdirectory(SimpleViewer)
+	add_subdirectory(ExtendedAPI)
 else()
 
 	add_subdirectory(ColorReaderEvent)
@@ -146,11 +146,14 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so.4.2 DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libopencv_imgproc.so.4.2.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
+
 			#libpng12
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libpng12.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/Linux/lib/libpng12.so.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
+
 			#D2C
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/d2c/lib/x64/libd2c.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
+
 			#libuvc
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/x64/libuvc.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/x64/libuvc.so.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
@@ -190,6 +193,7 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
 
 			#D2C
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/d2c/lib/arm-32/libd2c.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
+
 			#libuvc
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/arm-32/libuvc.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/arm-32/libuvc.so.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
@@ -217,9 +221,9 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/arm-64/lib/libopencv_imgproc.so.4.2 DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/OpenCV420/arm-64/lib/libopencv_imgproc.so.4.2.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
 
-			
 			#D2C
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/d2c/lib/arm-64/libd2c.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
+
 			#libuvc
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/arm-64/libuvc.so DESTINATION ${PROJECT_BINARY_DIR}/bin)
 			install(FILES ${PROJECT_SOURCE_DIR}/ThirdParty/libuvc/arm-64/libuvc.so.0 DESTINATION ${PROJECT_BINARY_DIR}/bin)
